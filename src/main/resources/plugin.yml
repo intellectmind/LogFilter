@@ -1,0 +1,18 @@
+name: LogFilter
+version: '1.0.0'
+main: cn.kurt6.logfilter.LogFilter
+api-version: 1.16
+authors: [ Kurt ]
+folia-supported: true
+
+commands:
+  logfilter:
+    description: 日志过滤器管理命令 / Log filter management command
+    usage: /logfilter <reload>
+    permission: logfilter.admin
+    permission-message: 您没有权限使用此命令 / You don't have permission to use this command
+
+permissions:
+  logfilter.admin:
+    description: 允许管理日志过滤器 / Allow managing log filter
+    default: op

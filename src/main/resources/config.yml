@@ -1,0 +1,24 @@
+# 日志过滤规则列表 (使用正则表达式) / Log filter rules (using regular expressions)
+filter-patterns:
+  # 示例：过滤玩家移动相关的调试信息 / Example: Filter player movement debug messages
+  - ".*moved too quickly.*"
+
+  # 示例：过滤某些插件的调试信息 / Example: Filter debug messages from plugins
+  - "\\[DEBUG\\].*"
+
+  # 示例：过滤连接超时信息 / Example: Filter connection timeout messages
+  - ".*Connection timeout.*"
+
+  # 示例：过滤某个特定插件的所有消息 / Example: Filter all messages from a specific plugin
+  - "\\[SomePlugin\\].*"
+
+  # 示例：过滤包含特定关键词的日志 / Example: Filter logs containing specific keywords
+  - ".*spam.*"
+  - ".*unnecessary.*"
+
+# 配置说明 / Configuration Instructions:
+# - 每个规则都是一个正则表达式 / Each rule is a regular expression
+# - 匹配的日志将被阻止输出到控制台 / Matching logs will be blocked from console output
+# - 使用 \\ 来转义特殊字符 / Use \\ to escape special characters
+# - 可以添加任意数量的过滤规则 / You can add any number of filter rules
+# - 留空数组 [] 将不过滤任何日志 / Empty array [] will not filter any logs
