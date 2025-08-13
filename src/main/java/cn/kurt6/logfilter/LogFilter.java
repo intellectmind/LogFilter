@@ -17,6 +17,10 @@ public class LogFilter extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        // bStats
+        int pluginId = 26904;
+        cn.kurt6.logfilter.bStats.Metrics metrics = new cn.kurt6.logfilter.bStats.Metrics(this, pluginId);
+
         instance = this;
         saveDefaultConfig();
         getCommand("logfilter").setExecutor(new LogFilterCommand(this));
