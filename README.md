@@ -61,3 +61,7 @@ filter-patterns:
 filter-patterns:
   - ".*Example filter pattern.*"
   - ".*Another example.*"
+```
+
+### bStats
+![bStats](https://bstats.org/signatures/bukkit/LogFilter.svg)
