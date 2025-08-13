@@ -27,6 +27,7 @@ Config file (`plugins/LogFilter/config.yml`) will be generated on first run:
 filter-patterns:
   - ".*Example filter pattern.*"
   - ".*Another example.*"
+```
 
 --------------------------------------------------
 
